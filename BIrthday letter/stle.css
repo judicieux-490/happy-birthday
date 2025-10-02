@@ -1,0 +1,16 @@
+/* style.css */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.letter-container {
+    /* ... styling dasar ... */
+    animation: pulse 4s infinite ease-in-out; /* Membuat seluruh surat berdetak pelan */
+}
+
+.special-photo:hover {
+    transform: scale(1.1) rotate(2deg); /* Foto membesar dan sedikit berputar saat di-hover */
+    transition: transform 0.3s ease-in-out;
+}
